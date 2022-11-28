@@ -2,7 +2,7 @@ import express from 'express'
 import { PrismaClient } from '@prisma/client'
 
 const app = express()
-const port = Number(process.env.PORT) || 3001
+const port = Number(process.env.PORT) || 8000
 
 const prisma = new PrismaClient()
 
@@ -10,7 +10,7 @@ async function main() {
   const newUser = await prisma.user.create({
     data: {
       name: 'Alice',
-      email: 'qwe@prisma.io',
+      email: 'qaz@prisma.io',
       posts: {
         create: {
           title: 'Hello World',

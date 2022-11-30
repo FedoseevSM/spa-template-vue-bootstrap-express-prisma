@@ -14,9 +14,13 @@ import HelloWorld from "../../components/HelloWorld.vue";
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <div>
-    <b-button>I am a Button</b-button>
-    <b-button href="#">I am a Link</b-button>
+  <div className="row">
+    <div className="col">
+      <b-button>I am a Button</b-button>
+    </div>
+    <div className="col">
+      <b-button href="#">I am a Link</b-button>
+    </div>
   </div>
 </template>
 
